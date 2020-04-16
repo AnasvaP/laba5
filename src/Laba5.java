@@ -89,7 +89,7 @@ public class Laba5 {
 
 
             double[][] matrixForY = new double[15][3];
-            int averageY1 = 0, averageY2 = 0, averageY3 = 0, averageY4 = 0,
+            double averageY1 = 0, averageY2 = 0, averageY3 = 0, averageY4 = 0,
                     averageY5 = 0, averageY6 = 0, averageY7 = 0, averageY8 = 0,
                     averageY9 = 0, averageY10 = 0, averageY11 = 0, averageY12 = 0,
                     averageY13 = 0, averageY14 = 0, averageY15 = 0;
@@ -122,7 +122,7 @@ public class Laba5 {
                 averageY15 += matrixForY[14][j] / 3;
             }
 
-            int[] averageYArray = {averageY1, averageY2, averageY3, averageY4,
+            double[] averageYArray = {averageY1, averageY2, averageY3, averageY4,
                     averageY5, averageY6, averageY7, averageY8, averageY9, averageY10, averageY11,
                     averageY12, averageY13, averageY14, averageY15};
 
@@ -131,7 +131,7 @@ public class Laba5 {
                     a1 = 0, a2 = 0, a3 = 0, a4 = 0, a5 = 0, a6 = 0, a7 = 0, a8 = 0, a9 = 0, a10 = 0;
 
             for (int i = 0; i < 15; i++) {
-                System.out.printf("Cереднє значення функції відгуку для %d рядка = %d%n ", (i + 1), averageYArray[i]);
+                System.out.printf("Cереднє значення функції відгуку для %d рядка = %f%n ", (i + 1), averageYArray[i]);
                 my += averageYArray[i] / 15;
             }
 
