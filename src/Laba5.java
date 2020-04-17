@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Laba5 {
 
     public static void main(String[] args) {
+        long mmm = System.currentTimeMillis();
 
             double[][] mainMatrix = {
                     {1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1},
@@ -620,6 +621,7 @@ public class Laba5 {
                 }
             }
             FisheraMethod(sum, d, sb, f3, f4, N);
+        System.out.println("ЧАС РОБОТИ ПРОГРАМИ (МІЛІСЕКУНДИ) =   "+(double) (System.currentTimeMillis() - mmm));
         }
 
 
